@@ -1,0 +1,16 @@
+src/
+├── App.js
+├── components/
+│   ├── LoginPage.jsx
+│   ├── RoleSelectionPage.jsx
+│   ├── doctor/
+│   │   ├── DoctorLayout.jsx
+│   │   ├── Sidebar.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── Profile.jsx
+│   │   ├── Appointments.jsx
+│   │   ├── Patients.jsx
+│   │   └── DoctorRegistration.jsx
+│   └── patient/
+       ├── PatientRegistration.jsx
+       └── PatientHome.jsx
