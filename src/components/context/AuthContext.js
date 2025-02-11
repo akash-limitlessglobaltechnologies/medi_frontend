@@ -8,7 +8,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (googleData) => {
     try {
-      const res = await fetch('https://medi-backend-nine.vercel.app/api/auth/google', {
+        const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/auth/google`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ googleId: googleData.sub, email: googleData.email })

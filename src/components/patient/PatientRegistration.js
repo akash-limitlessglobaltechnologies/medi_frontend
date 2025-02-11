@@ -111,7 +111,7 @@ const PatientRegistration = () => {
     if (validateForm()) {
       setIsSubmitting(true);
       try {
-        const response = await fetch('https://medi-backend-nine.vercel.app/api/register/patient', {
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/register/patient`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

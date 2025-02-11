@@ -7,7 +7,7 @@ const RoleSelectionPage = () => {
 
   const handleRoleSelect = async (role) => {
     try {
-      const response = await fetch('https://medi-backend-nine.vercel.app/api/auth/role', {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/auth/role`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
